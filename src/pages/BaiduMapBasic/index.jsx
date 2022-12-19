@@ -6,22 +6,18 @@ const BaiduMapBasic = () => {
 
   useEffect(() => {
     console.log(BMapGL);
-    let map = new BMapGL.Map(mapRef.current, {
-      backgroundColor: [6, 61, 86, 100],
-    });
-    let point = new BMapGL.Point(113.35, 23.29);
-    // let point = new BMapGL.Point(116.20596467080586,40.0144555532275);
-    map.centerAndZoom(point, 12);
+    let map = new BMapGL.Map(mapRef.current);
+    // 设置坐标点(北京)
+    let point = new BMapGL.Point(116.404, 39.915);
+    // 设置地图中心点及缩放
+    map.centerAndZoom(point, 5);
+    // 允许滚轮缩放
     map.enableScrollWheelZoom(true);
-    map.setTilt(45);
   });
 
   return (
     <PageContainer>
-      <div>
-        百度地图基础使用
-        <div ref={mapRef} style={{ width: '600px', height: '600px' }}></div>
-      </div>
+      <div ref={mapRef} style={{ width: '800px', height: '600px' }}></div>
     </PageContainer>
   );
 };
