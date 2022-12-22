@@ -9,11 +9,13 @@ specifiers:
   antd: ^5.0.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
+  mapv-three: ^1.0.7
   mapvgl: 1.0.0-beta.169
   prettier: ^2.7.1
   prettier-plugin-organize-imports: ^2
   prettier-plugin-packagejson: ^2
   react-bmapgl: ^0.2.14
+  three: ^0.147.0
   typescript: ^4.1.2
 
 dependencies:
@@ -21,8 +23,10 @@ dependencies:
   '@ant-design/pro-components': 2.3.47_antd@5.0.7
   '@umijs/max': 4.0.36_cfrib46mt4girejiqrssrim7jq
   antd: 5.0.7
+  mapv-three: 1.0.7
   mapvgl: 1.0.0-beta.169
   react-bmapgl: 0.2.14
+  three: 0.147.0
 
 devDependencies:
   '@types/react': 18.0.26
@@ -4176,6 +4180,10 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /bmap-three/0.140.2:
+    resolution: {integrity: sha512-bVpjIWQK3sRSJb8gOUNJOTLLlFuFrslVj8irgvbEtOkOW5gdGtdXKILvLNQ7sudNmkwjVDnfJoeN0e9+QZB5FA==}
+    dev: false
+
   /bn.js/4.12.0:
     resolution: {integrity: sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==}
     dev: false
@@ -6853,6 +6861,12 @@ packages:
   /map-obj/4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
+    dev: false
+
+  /mapv-three/1.0.7:
+    resolution: {integrity: sha512-RXd6w7BmN803swRoQqEcLKVeySWT+Dw1O4r/Hgh/dhIn9QGkOleXKG6i4tjLWQl693xuZkLRx9ngBQSInsma5A==}
+    dependencies:
+      bmap-three: 0.140.2
     dev: false
 
   /mapvgl/1.0.0-beta.169:
@@ -9891,6 +9905,10 @@ packages:
     resolution: {integrity: sha512-UkEhKIg2pD+fjkHQKyJO3yoIvAP3N6RlNFt2dUhcS1FGvCD1cQa1M/PGknCLFIyZdtJOWQjejp7bdNqmN7zwdA==}
     dependencies:
       real-require: 0.1.0
+    dev: false
+
+  /three/0.147.0:
+    resolution: {integrity: sha512-LPTOslYQXFkmvceQjFTNnVVli2LaVF6C99Pv34fJypp8NbQLbTlu3KinZ0zURghS5zEehK+VQyvWuPZ/Sm8fzw==}
     dev: false
 
   /through/2.3.8:

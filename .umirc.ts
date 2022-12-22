@@ -59,6 +59,11 @@ export default defineConfig({
       path: '/BaiduMapReact',
       component: './BaiduMapReact',
     },
+    {
+      name: ' 百度地图MapV Three Gallery',
+      path: '/BaiduMapThree',
+      component: './BaiduMapThree',
+    },
   ],
   npmClient: 'pnpm',
   plugins: [],
@@ -68,5 +73,6 @@ export default defineConfig({
     'https://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js',
     'https://unpkg.com/mapvgl/dist/mapvgl.min.js',
     'http://mapv.baidu.com/build/mapv.min.js',
+    'https://unpkg.com/mapv-three@1.0.1/dist/mapvthree.umd.js'
   ],
 });

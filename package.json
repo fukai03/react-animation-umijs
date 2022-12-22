@@ -15,8 +15,10 @@
     "@ant-design/pro-components": "^2.0.1",
     "@umijs/max": "^4.0.36",
     "antd": "^5.0.0",
+    "mapv-three": "^1.0.7",
     "mapvgl": "1.0.0-beta.169",
-    "react-bmapgl": "^0.2.14"
+    "react-bmapgl": "^0.2.14",
+    "three": "^0.147.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
