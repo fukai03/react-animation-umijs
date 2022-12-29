@@ -40,6 +40,11 @@ export default defineConfig({
       component: './BaiduMapController',
     },
     {
+      name: ' 百度地图全屏控件',
+      path: '/BaiduMapFullScreenController',
+      component: './BaiduMapFullScreenController',
+    },
+    {
       name: ' 百度地图3.0版本',
       path: '/BaiduMapV3',
       component: './BaiduMapV3',
@@ -63,6 +68,11 @@ export default defineConfig({
       name: ' 百度地图MapV Three Gallery',
       path: '/BaiduMapThree',
       component: './BaiduMapThree',
+    },
+    {
+      name: ' 百度地图全国棱柱效果',
+      path: '/BaiduMapPrism',
+      component: './BaiduMapPrism',
     },
   ],
   npmClient: 'pnpm',

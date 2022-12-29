@@ -1,0 +1,30 @@
+.wrap {
+    .mapWraper {
+        display: inline-block;
+        margin: 0 30px;
+        .fullScreenIcon , .exitfullScreenIcon {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+        .fullScreenIcon {
+            background: url(../../assets/image/full-screen-one.svg) no-repeat;
+        }
+        .exitfullScreenIcon {
+            display: none;
+            background: url(../../assets/image/off-screen-one.svg) no-repeat;
+        }
+        &:fullscreen {
+            .fullScreenIcon {
+               display: none;
+            }
+            .exitfullScreenIcon {
+                display: block;
+            }
+        }
+    }
+}
